@@ -1,4 +1,6 @@
 #include "Creep.h"
+#include "Tower.h"
+#include "Game.h"
 
 #pragma once
 class Projectile
@@ -7,6 +9,7 @@ public:
 
 	Projectile();
 	~Projectile();
+	
 
 	//projectile moves
 	void move();
@@ -22,7 +25,7 @@ public:
 	void calculate();
 
 private:
-	int posX;
+	float posX;
 	int posY;
 
 	//Moving speed
@@ -32,6 +35,7 @@ private:
 	//type of projectile
 	int type;
 
+	CreepSquad* squad;
 
 	Creep * target;
 		

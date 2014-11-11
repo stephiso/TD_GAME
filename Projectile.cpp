@@ -8,6 +8,7 @@ Projectile::Projectile()
 
 Projectile::~Projectile()
 {
+	squad = NULL;
 }
 
 
@@ -21,7 +22,9 @@ void Projectile::calculate()
 
 void Projectile::move()
 {
-	//move according to the target location
+
+vector<Creep*> creeps = squad->getCreeps();
+
 }
 
 bool Projectile::hit()
