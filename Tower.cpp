@@ -168,6 +168,7 @@ void Tower::shootAvailableCreeps(){
 			
 			if (creeps[i]->getHitPoints() > 0){
 				creeps[i]->damageCreep(p, getDamage());
+				Creep* target = creeps[i];
 				cout << "Fired!\n";
 				break;
 			}

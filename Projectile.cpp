@@ -23,7 +23,7 @@ void Projectile::calculate()
 void Projectile::move()
 {
 
-vector<Creep*> creeps = squad->getCreeps();
+	
 
 }
 
